@@ -35,7 +35,6 @@ CREATE TABLE `address` (
     `title` CHAR(255) NOT NULL,
     `provineId` VARCHAR(191) NOT NULL,
     `userId` INTEGER NOT NULL,
-    `usersId` INTEGER NULL,
 
     UNIQUE INDEX `address_title_key`(`title`),
     INDEX `address_userId_fkey`(`userId`),

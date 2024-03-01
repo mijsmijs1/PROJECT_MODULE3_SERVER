@@ -219,7 +219,7 @@ export const userController = {
                     message: "Bạn không đủ quyền!"
                 }
             }
-            if (req.tokenData.role == "master" && req.tokenData.id != id) {
+            if (req.tokenData.role == "master" && req.tokenData.id != id &&  req.body.role == "master") {
                 throw {
                     message: "Master không thể update Master khác!"
                 }

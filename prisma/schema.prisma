@@ -41,7 +41,6 @@ model address {
   provineId String
   userId    Int
   users     users? @relation(fields: [userId], references: [id])
-  usersId   Int?
 
   @@index([userId], map: "address_userId_fkey")
 }
