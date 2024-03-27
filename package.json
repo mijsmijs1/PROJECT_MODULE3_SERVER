@@ -7,7 +7,8 @@
     "dev": "nodemon --exec ts-node src/main.ts",
     "dbpush": "prisma db push",
     "dbpull": "prisma db pull",
-    "dbm": "prisma migrate dev"
+    "dbm": "prisma migrate dev",
+     "build": "tsc"
   },
   "keywords": [],
   "author": "",
